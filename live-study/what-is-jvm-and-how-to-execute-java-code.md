@@ -38,7 +38,7 @@
 > CPU와 OS에 따라 컴퓨터가 인식할 수 있는 기계어가 다르다.
 > ⇒ JVM이 CPU, OS에 맞는 기계어로 번역해준다.
 
-
+</br>
 
 ### 컴파일 하는 방법
 
@@ -57,7 +57,7 @@ javac <filename>.java
 
 > class 파일에는 해당 Bytecode가 어떤 버전에 호환되도록 작성되었는지 기록되어 있다.
 
-
+</br>
 
 ### 실행하는 방법
 
@@ -78,7 +78,7 @@ java <package>.<classname>
 * javac : 해당 파일 컴파일 수행
 * java : 패키지에 존재하는 클래스를 실행
 
-
+</br>
 
 ### 바이트코드란 무엇인가
 
@@ -94,7 +94,7 @@ javap -c <classname> || javap -v <classname>
 
 > 바이트코드는 명령어들이 1byte를 차지한다.
 
-
+</br>
 
 ### JIT 컴파일러란 무엇이며 어떻게 동작하는지
 
@@ -107,7 +107,7 @@ javap -c <classname> || javap -v <classname>
 
 JIT 컴파일 과정은 별도의 스레드에서 실행되고, JVM 스레드는 JIT 컴파일 스레드의 영향을 받지 않기 때문에 애플리케이션의 실행에 영향을 주지 않는다. 컴파일이 진행중일 때에는 인터프리터 방식으로 동작하지만, 컴파일이 완료되면 컴파일 된 버전을 사용하게 되는데 이를 on-stack replacement(OSR) 이라고 한다.
 
-
+</br>
 
 ### JVM 구성 요소
 
@@ -194,7 +194,7 @@ JVM 구성 요소에는 크게 `Class Loader`, `Execution Engine`, `Garbage Coll
 
     자바외 언어로 작성된 네이티브 코드(기계어)를 위한 메모리 영역
 
-
+</br>
 
 ### JDK와 JRE의 차이
 
