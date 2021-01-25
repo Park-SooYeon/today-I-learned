@@ -18,7 +18,7 @@
 
 ### JVM이란 무엇인가
 
-**JVM (Java Virtual Machine)**은 자바를 실행하기 위한 가상 머신으로 하는 역할은 크게 아래 두가지가 있다.
+**JVM (Java Virtual Machine)** 은 자바를 실행하기 위한 가상 머신으로 하는 역할은 크게 아래 두가지가 있다.
 
 역할
 
@@ -38,6 +38,8 @@
 > CPU와 OS에 따라 컴퓨터가 인식할 수 있는 기계어가 다르다.
 > ⇒ JVM이 CPU, OS에 맞는 기계어로 번역해준다.
 
+
+
 ### 컴파일 하는 방법
 
 **컴파일 한다는 것의 의미?** `.java` 파일을 `.class` 파일(Java Bytecode)로 만든다는 것을 의미한다.
@@ -55,6 +57,8 @@ javac <filename>.java
 
 > class 파일에는 해당 Bytecode가 어떤 버전에 호환되도록 작성되었는지 기록되어 있다.
 
+
+
 ### 실행하는 방법
 
 컴파일 된 Java 코드를 아래 명령어로 수행할 수 있다. (.class 파일이 존재하지 않으면 실행되지 않는다.)
@@ -65,7 +69,7 @@ java <package>.<classname>
 
 수행하는 클래스의 .class 파일이 존재하지 않을 경우, 아래와 같은 오류가 발생한다.
 
-![image-20210125215127894](C:\Users\cjg03\AppData\Roaming\Typora\typora-user-images\image-20210125215127894.png)
+![image](https://user-images.githubusercontent.com/49746644/105714991-63c0a200-5f60-11eb-9eb1-18c5fd8def35.png)
 
 `-cp` 옵션으로 classpath를 지정해줄 수 있으며 classname 뒤에 문자열 형태의 매개변수를 전달해 줄 수 있다.
 
@@ -73,6 +77,8 @@ java <package>.<classname>
 
 * javac : 해당 파일 컴파일 수행
 * java : 패키지에 존재하는 클래스를 실행
+
+
 
 ### 바이트코드란 무엇인가
 
@@ -88,6 +94,8 @@ javap -c <classname> || javap -v <classname>
 
 > 바이트코드는 명령어들이 1byte를 차지한다.
 
+
+
 ### JIT 컴파일러란 무엇이며 어떻게 동작하는지
 
 **JIT (Just In Time) 컴파일러**는 런타임에 인터프리터 방식으로 동작하는 java의 한계를 보완한 기술로 프로그램을 실제 실행하는 시점에 기계어로 번역하여 실행한다.
@@ -99,11 +107,13 @@ javap -c <classname> || javap -v <classname>
 
 JIT 컴파일 과정은 별도의 스레드에서 실행되고, JVM 스레드는 JIT 컴파일 스레드의 영향을 받지 않기 때문에 애플리케이션의 실행에 영향을 주지 않는다. 컴파일이 진행중일 때에는 인터프리터 방식으로 동작하지만, 컴파일이 완료되면 컴파일 된 버전을 사용하게 되는데 이를 on-stack replacement(OSR) 이라고 한다.
 
+
+
 ### JVM 구성 요소
 
 JVM 구성 요소에는 크게 `Class Loader`, `Execution Engine`, `Garbage Collector`, `Runtime Data Area`가 있다.
 
-![image-20210125221734811](C:\Users\cjg03\AppData\Roaming\Typora\typora-user-images\image-20210125221734811.png)
+![JVMimage](https://user-images.githubusercontent.com/49746644/105714955-59060d00-5f60-11eb-9064-7765ad093745.png)
 
 - Class Loader
 
@@ -132,7 +142,7 @@ JVM 구성 요소에는 크게 `Class Loader`, `Execution Engine`, `Garbage Coll
 
 - Runtime Data Area
 
-  ![image-20210125221750983](C:\Users\cjg03\AppData\Roaming\Typora\typora-user-images\image-20210125221750983.png)
+  ![image](https://user-images.githubusercontent.com/49746644/105714970-5d322a80-5f60-11eb-9db1-ac801255cfbf.png)
 
   프로그램을 수행하기 위해 OS에서 할당받은 메모리 공간 (JVM의 메모리 공간)
 
@@ -184,6 +194,8 @@ JVM 구성 요소에는 크게 `Class Loader`, `Execution Engine`, `Garbage Coll
 
     자바외 언어로 작성된 네이티브 코드(기계어)를 위한 메모리 영역
 
+
+
 ### JDK와 JRE의 차이
 
 **JDK vs JRE**
@@ -198,6 +210,8 @@ JVM 구성 요소에는 크게 `Class Loader`, `Execution Engine`, `Garbage Coll
 
 
 ---
+
+### ETC
 
 **Java 실행방식**
 
