@@ -204,7 +204,7 @@ Exception의 종류에는 RuntimeException 클래스 상속 여부에 따라 Che
 
 각 Exception의 특징은 아래와 같다.
 
-![image-20210203182445566](C:\Users\cjg03\AppData\Roaming\Typora\typora-user-images\image-20210203182445566.png)
+![image](https://user-images.githubusercontent.com/49746644/106740519-dcf57e80-665d-11eb-87d3-b4e93d4794d5.png)
 
 > Ref : https://www.nextree.co.kr/p3239/
 
